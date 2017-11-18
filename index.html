@@ -15,6 +15,15 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
 	<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/gfampoafnkbhfhnigeplleojkfhnilla">
+	<script>
+		function installSuccess() {
+			console.log('Install success!');
+		}
+
+		function installFailre() {
+			console.log('Install failure!');
+		}
+	</script>
 </head>
 
 <body class="homepage">
@@ -35,7 +44,7 @@
 					<div class="5u 12u(medium)">
 						<ul>
 							<li>
-								<button onclick="chrome.webstore.install()" class="big icon fa-arrow-circle-right">Add to Chrome</button>
+								<button onclick="chrome.webstore.install(installSuccess, installFailure)" class="big icon fa-arrow-circle-right">Add to Chrome</button>
 							</li>
 						</ul>
 					</div>
