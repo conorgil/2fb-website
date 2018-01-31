@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<!--
+	Verti by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>2FB - Install</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+	<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/gfampoafnkbhfhnigeplleojkfhnilla">
+	<script>
+		function installSuccess() {
+			console.log('Install success!');
+		}
+
+		function installFailure(args) {
+			console.log('Install failure! %O', args);
+		}
+	</script>
+</head>
+
+<body class="homepage">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header-wrapper">
+		</div>
+
+		<!-- Banner -->
+		<div id="banner-wrapper">
+			<div id="banner" class="box container">
+				<div class="row">
+					<div class="7u 12u(medium)">
+						<h2>Install</h2>
+						<p>
+							The Two Factor Buddy (2FB) web extension will:
+						</p>
+						<ul>
+							<li>Help you avoid falling victim to phishing attacks.</li>
+							<li>Save you time logging into third party services with two factor authentication (2FA).</li>
+							<li>Notify you which of your third party services offer 2FA.</li>
+						</ul>
+					</div>
+					<div class="5u 12u(medium)">
+						<ul>
+							<li>
+								<button onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/gfampoafnkbhfhnigeplleojkfhnilla', installSuccess, installFailure)"
+								 class="big icon fa-arrow-circle-right">Add to Chrome</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<footer id="footer" class="container">
+				<div class="row">
+					<div class="12u">
+						<div id="copyright">
+							<ul class="menu">
+								<li>&copy; Two Factor Buddy. All rights reserved</li>
+								<li>Design:
+									<a href="http://html5up.net">HTML5 UP</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
